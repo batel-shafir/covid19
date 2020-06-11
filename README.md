@@ -5,6 +5,8 @@ Simple App that uses https://covid19api.com/ API and returns the 10 countries wi
 In this project I used the following technologies: 
 React hooks, axios and Material UI.
 
+
+
 In the project directory, run:
 
 ### `npm i`
