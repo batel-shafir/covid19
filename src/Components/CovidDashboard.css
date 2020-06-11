@@ -1,26 +1,27 @@
+.data-container{
+    text-align: center;
+  }
+
 .centered {
     position: fixed; 
     top: 50%;
     left: 45%;
   }
-  .data-container{
-    text-align: center;
-  }
-  .loading-header{
+
+.loading-header{
     padding-bottom: 10px;
     font-size: 20px;
     font-weight: 700;
-  }
-  
-  .countries-header{
+}
+
+.countries-header{
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 20px;
     font-weight: 700;
-  }
-  
-  .country-info{
+}
+
+.country-info{
     font-size: 14px;
     text-transform: uppercase;
-  
-  }
+}

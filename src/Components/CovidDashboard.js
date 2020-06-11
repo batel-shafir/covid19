@@ -40,13 +40,11 @@ function CovidDashboard(props) {
             });
             const top10ConfirmedCountries = sortedArr.slice(0,10);
             setTop10Countries(top10ConfirmedCountries);   
-        }
-        
-        gotCountriesNames && fetchNumberOfCases().then(null);
-        
-    },[countries]
-    );
+        } 
 
+        gotCountriesNames && fetchNumberOfCases().then(null);
+
+    },[countries]);
 
   return (
     <div className="data-container">           
@@ -55,25 +53,20 @@ function CovidDashboard(props) {
                 <div className="loading-header">Fetching the data...</div>
                 <CircularProgress></CircularProgress>
         </div>}
-        {!isLoading &&
-         
-        <div className="countries-container">
+        {!isLoading && <div className="countries-container">
             <div className="countries-header">
                 10 countries with highest amount of confirmed cases in the past 3 months
             </div>
             {top10Countries.map(country => {
-                return (     
+                return(     
                     <div className="country-info">
                         <div>{ country.name }</div>
                         <div>{ country.confirmedCases }</div>
                         <img alt="flag" src={`https://www.countryflags.io/${country.code}/flat/64.png`}/>
-                    </div>)
-                
+                    </div>);       
             })}  
-        </div> }     
+        </div>}     
         </div>
-    
-    
   );
 }
  
