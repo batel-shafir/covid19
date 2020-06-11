@@ -8,7 +8,7 @@ React hooks, axios and Material UI.
 
 
 
-## In the project directory, run:
+In the project directory, run:
 
 ### `npm i`
 Installs all the node modules for the required project.
